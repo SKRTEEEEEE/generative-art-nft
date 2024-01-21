@@ -1,5 +1,6 @@
 #!/usr/bin/env python
 # coding: utf-8
+# cambiar la linea que hace de png a jpg
 
 import pandas as pd
 import numpy as np
@@ -14,7 +15,7 @@ warnings.simplefilter(action='ignore', category=FutureWarning)
 
 
 # Base metadata. MUST BE EDITED.
-BASE_IMAGE_URL = "ipfs://QmQ57HXSA1z5tjP1ArUUhPDM5ZstT5UjiMymDcwTkpjxu3"
+BASE_IMAGE_URL = "https://ipfs.io/ipfs/QmYCxmohBqZQSVZqAdYBQLyE4qY6YGRVqnCD9H8hhmCcGc"
 BASE_NAME = "Can Valdes #"
 
 BASE_JSON = {
@@ -97,8 +98,8 @@ def main():
         # Append number to base name
         item_json['name'] = item_json['name'] + str(idx)
 
-        # Append image PNG file name to base image path
-        item_json['image'] = item_json['image'] + '/' + str(idx).zfill(zfill_count) + '.png'
+        # Append image PNG file name to base image path !!!!
+        item_json['image'] = item_json['image'] + '/' + str(idx).zfill(zfill_count) + '.jpg'
 
         # Convert pandas series to dictionary
         attr_dict = dict(row)

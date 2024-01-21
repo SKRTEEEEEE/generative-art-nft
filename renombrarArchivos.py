@@ -1,7 +1,7 @@
 import os
 
 # Ruta de la carpeta que contiene los archivos que deseas renombrar
-ruta_carpeta = 'C:/Users/Adan/Pictures/houseLuxuryWhite1'
+ruta_carpeta = 'C:/Users/Adan/Pictures/houseLuxury/houseLuxuryWhite1'
 
 # Cambia al directorio de la carpeta
 os.chdir(ruta_carpeta)
